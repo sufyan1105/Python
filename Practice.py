@@ -15,5 +15,15 @@
 # else :
 #     print("The number is odd")
 
+# Traffic signal 
 
+light = input("Enter the color : ")
+if light == "red" :
+    print("Stop")
+elif light == "green" :
+    print("Go")
+elif light == "yellow" :
+    print("Go Slow")
+else:
+    print("The light is broken.")
 
