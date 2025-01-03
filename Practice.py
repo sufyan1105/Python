@@ -13,3 +13,10 @@
 # area = side * side
 # print("The area of square is", area)
 
+# number greater than
+# num1 = int(input("Enter your First number : "))
+# num2 = int(input("Enter your Second number : "))
+# if num1 > num2:
+#     print(num1,"is greater than",num2)
+# else:
+#     print(num2,"is greater than",num1)  
