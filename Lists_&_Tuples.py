@@ -16,8 +16,13 @@
 
 # List Methods
 list = [1,2,3,4,5,6,7,8,9]
-print(list.append(10))
-print(list.sort())
-print(list.sort(reverse=True))
-print(list.reverse)
-print(list.insert(0))
+# print(list.append(10))
+# print(list.sort())
+# print(list.sort(reverse=True))
+# print(list.reverse)
+# print(list.insert(index , value))
+# print(list)
+# print(list.remove(3))
+# print(list)  # Output: [1, 2, 4, 5]
+# print(list.pop(1)) # Pops using index value
+# print(list)  # Output: [1, 4, 5]  
