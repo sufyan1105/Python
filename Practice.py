@@ -8,9 +8,8 @@
 # sum = num1 + num2
 # print("The sum of both the numbers is :",sum)
 
-num1 = int(input("Enter number 1 : "))
-num2 = int(input("Enter number 2 : "))
-sum = num1 + num2
-
-print("The sum of 2 numbers is", sum)
+# Area of square
+# side = int(input("Enter the side of square : "))
+# area = side * side
+# print("The area of square is", area)
 
