@@ -25,4 +25,11 @@
 # else:
 #     print("The word is not a palindrome")
 
+# Code to see how many students got A in their grade test
+# grades = ['A','B','C','D','A','A','B','C','D','A']
+# print(grades.count('A')) # Returns the number of occurences of the element
 
+# Code to sort the grades in ascending order
+# grades = ['A','B','C','D','A','A','B','C','D','A']
+# grades.sort()
+# print(grades) # Returns the sorted list of the elements
