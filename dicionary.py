@@ -11,14 +11,14 @@
 
 # Nested dictionaries
 
-student = {
-    "name" : "Mark",
-    "subjects" : {
-        "maths" : 70,
-        "physics" : 80,
-        "chemistry" : 90,
-    }
-}
+# student = {
+#     "name" : "Mark",
+#     "subjects" : {
+#         "maths" : 70,
+#         "physics" : 80,
+#         "chemistry" : 90,
+#     }
+# }
 # print(student["subjects"]["maths"])
 # print(student.keys())
 # print(list(student.keys()))
@@ -27,9 +27,12 @@ student = {
 # print(student.items())
 # print(student.get("name"))
 # print(student.update({"city": "Mumbai"}))
-print(student)
+# print(student)
 
-
-
+furniture = {
+    "table" : ["a piece of furniture" "list of facts & figures"],
+    "cat" : "a small animal",
+}
+print(furniture)
 
 
