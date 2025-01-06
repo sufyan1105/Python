@@ -29,10 +29,21 @@
 # print(student.update({"city": "Mumbai"}))
 # print(student)
 
-furniture = {
-    "table" : ["a piece of furniture" "list of facts & figures"],
-    "cat" : "a small animal",
-}
-print(furniture)
+# furniture = {
+#     "table" : ["a piece of furniture" "list of facts & figures"],
+#     "cat" : "a small animal",
+# }
+# print(furniture)
 
+marks = {}
+
+maths = int(input("Enter the number of students: "))
+chemistry = int(input("Enter the number of students: "))
+physics = int(input("Enter the number of students: "))
+
+marks.update({"maths": maths})
+marks.update({"chemistry": chemistry})
+marks.update({"physics": physics})
+
+print(marks)
 

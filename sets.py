@@ -10,11 +10,16 @@
 # print(collection.intersection(collection2))
 # print(collection)
 
-classroom = {
-    "python", "java", "c++","c","python","java","c++","javascript",
+# classroom = {
+#     "python", "java", "c++","c","python","java","c++","javascript",
+# }
+# print(len(classroom))
+
+value = {
+    # 9,"9.0",
+    ("float",9.0),
+    ("int",9),
 }
-
-print(len(classroom))
-
+print(value)
 
 
