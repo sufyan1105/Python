@@ -24,7 +24,10 @@ student = {
 # print(student.keys())
 # print(list(student.keys()))
 # print(student.values())
-print(len(student))
+# print(len(student))
+print(student.items())
+# print(stu)
+
 
 
 
