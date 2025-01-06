@@ -19,14 +19,15 @@ student = {
         "chemistry" : 90,
     }
 }
-# print(student)
 # print(student["subjects"]["maths"])
 # print(student.keys())
 # print(list(student.keys()))
 # print(student.values())
 # print(len(student))
-print(student.items())
-# print(stu)
+# print(student.items())
+# print(student.get("name"))
+# print(student.update({"city": "Mumbai"}))
+print(student)
 
 
 
