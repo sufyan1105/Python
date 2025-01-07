@@ -38,4 +38,18 @@
 #     print(nums[idx])
 #     idx += 1
 
+# Q5
+# nums = (1,4,9,16,25,36,49,64,81,100)
+# x = 11
+# i = 0
+
+# while i <= len(nums)-1:
+#     if nums[i] == x:
+#         print('Found at index:', i)
+#         break
+#     else:
+#         print('Not found')
+#     i += 1
+
+
 
