@@ -57,9 +57,14 @@
 #     print(n)
 
 # Q7
-nums = (1,4,9,16,25,36,49,64,81,100)
-for i in nums:
-    if i == 64:
-        print('Found at index:', nums.index(i))
-        break
+# nums = (1,4,9,16,25,36,49,64,81,100)
+# for i in nums:
+#     if i == 64:
+#         print('Found at index:', nums.index(i))
+#         break
+
+# Range function in for loop
+
+for i in range(1,11,2): # range(start, stop, step)
+    print(i)
 
