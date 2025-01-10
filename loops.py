@@ -82,8 +82,16 @@
 #     print(n*i)
 
 # Q11
-sum = 0
-for i in range(1,5):
-    sum += i
-print(sum)
+# sum = 0
+# for i in range(1,5):
+#     sum += i
+# print(sum)
 
+# Q12
+# sum = 0
+# i = 1
+# n = 5
+# while i <= n:
+#     sum += i
+#     i += 1
+# print(sum)
