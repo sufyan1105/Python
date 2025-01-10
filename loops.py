@@ -65,6 +65,9 @@
 
 # Range function in for loop
 
-for i in range(1,11,2): # range(start, stop, step)
-    print(i)
+# for i in range(1,11,2): # range(start, stop, step)
+#     print(i)
 
+# Q8
+# for i in range(1,101):
+#     print(i)
