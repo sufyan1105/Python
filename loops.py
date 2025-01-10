@@ -77,8 +77,13 @@
 #     print(i)
 
 # Q10
-n = 5
-for i in range(1,11):
-    print(n*i)
+# n = 5
+# for i in range(1,11):
+#     print(n*i)
 
+# Q11
+sum = 0
+for i in range(1,5):
+    sum += i
+print(sum)
 
