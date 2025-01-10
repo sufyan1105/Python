@@ -73,5 +73,12 @@
 #     print(i)
 
 # Q9
-for i in range(100,0,-1):
-    print(i)
+# for i in range(100,0,-1):
+#     print(i)
+
+# Q10
+n = 5
+for i in range(1,11):
+    print(n*i)
+
+
