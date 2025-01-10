@@ -52,8 +52,14 @@
 #     i += 1
 
 # Q6
-nums = (1,4,9,16,25,36,49,64,81,100)
-for n in nums:
-    print(n)
+# nums = (1,4,9,16,25,36,49,64,81,100)
+# for n in nums:
+#     print(n)
 
+# Q7
+nums = (1,4,9,16,25,36,49,64,81,100)
+for i in nums:
+    if i == 64:
+        print('Found at index:', nums.index(i))
+        break
 
