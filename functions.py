@@ -20,10 +20,15 @@
 # print_list(list)
 
 # Q3: To find the factiorial of number n
-def fact(n):
-    fact = 1
-    for i in range(1,n+1):
-        fact *= i
-    return fact
-print(fact(5))
+# def fact(n):
+#     fact = 1
+#     for i in range(1,n+1):
+#         fact *= i
+#     return fact
+# print(fact(5))
+
+# Q4: USD to INR conversion
+def conversion(a):
+    return a*83
+print(conversion(10))
 
