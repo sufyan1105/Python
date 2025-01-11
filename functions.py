@@ -29,6 +29,7 @@
 
 # Q4: USD to INR conversion
 def conversion(a):
-    return a*83
-print(conversion(10))
+    inr = a*83
+    return (f"The amount in INR is {inr}")
+print(conversion(73))
 
