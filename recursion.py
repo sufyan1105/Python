@@ -22,6 +22,7 @@
 #         return n + sum(n-1)
 # print(sum(5))
 
+# Recursive funtion to print all the elements of a list
 def print_list(list, idx=0):
     if idx == len(list):
         return 
