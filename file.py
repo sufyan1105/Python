@@ -1,11 +1,16 @@
 import os
 
-f = open('practice.txt', 'a')
-# data = f.read()
-# print(data)
+# f = open('practice.txt', 'a')
+# # data = f.read()
+# # print(data)
 
-f.write("My name is sufyan ")
-f.write("I am a student")
-f.close()
+# f.write("My name is sufyan ")
+# f.write("I am a student")
+# f.close()
 
-os.remove('practice.txt')
+# os.remove('practice.txt')
+
+with open("practice.txt", "w") as f:
+    f.write("My name is sufyan ")
+    f.write("I am a student")
+    
