@@ -26,6 +26,7 @@ class Toyota(Car):
     def __init__(self,name,type):
         self.name = name
         super().__init__(type)
+        super().start()
         
 car1 = Toyota("Fortuner","Petrol")
 print(car1.type)
