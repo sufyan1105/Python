@@ -10,26 +10,26 @@ Public Class:
     - It is accessible and documented for external use.
 """
 
-class Car:
-    def __init__(self, type):
-        self.type = type
+# class Car:
+#     def __init__(self, type):
+#         self.type = type
     
-    @staticmethod
-    def start():
-        print("Car is starting")
+#     @staticmethod
+#     def start():
+#         print("Car is starting")
 
-    @staticmethod
-    def stop():
-        print("Car is stopping")
+#     @staticmethod
+#     def stop():
+#         print("Car is stopping")
 
-class Toyota(Car):
-    def __init__(self,name,type):
-        self.name = name
-        super().__init__(type)
-        super().start()
+# class Toyota(Car):
+#     def __init__(self,name,type):
+#         self.name = name
+#         super().__init__(type)
+#         super().start()
         
-car1 = Toyota("Fortuner","Petrol")
-print(car1.type)
+# car1 = Toyota("Fortuner","Petrol")
+# print(car1.type)
 # car2 = Toyota("Innova")
 
 # print(car1.name)
@@ -56,3 +56,19 @@ print(car1.type)
 # print(c1.varA)
 # print(c1.varB)
 # print(c1.varC)
+
+# Class Method
+class Person:
+    name = "anonymous"
+
+    # def change_name(self, name):
+    #     self.name = name
+    
+    @classmethod
+    def change_name(cls, name):
+        cls.name = name
+
+p1 = Person()
+p1.change_name("Bruce")
+print(p1.name)
+print(Person.name)
