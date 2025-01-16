@@ -121,28 +121,40 @@ Public Class:
 # print("This is the radius of the circle:", c1.area())
 # print("This is the perimeter of the circle:", c1.perimeter())
 
-# Question 
-class Employee:
-    def __init__(self, role , department, salary):
-        self.role = role
-        self.department = department
-        self.salary = salary
+# Question define a class Employee with the following attributes: role, department, salary and a method showDetails. Define another class Engineer which inherits the Employee class and has the following attributes: name, age.
+# class Employee:
+#     def __init__(self, role , department, salary):
+#         self.role = role
+#         self.department = department
+#         self.salary = salary
     
-    def showDetails(self):
-        return f"Role: {self.role} \nDepartment: {self.department} \nSalary: {self.salary}"
+#     def showDetails(self):
+#         return f"Role: {self.role} \nDepartment: {self.department} \nSalary: {self.salary}"
     
-class Engineer(Employee):
-    def __init__(self,name, age):
-        self.name = name
-        self.age = age
-        super().__init__("Engineer", "Data Analyst", 40000)
+# class Engineer(Employee):
+#     def __init__(self,name, age):
+#         self.name = name
+#         self.age = age
+#         super().__init__("Engineer", "Data Analyst", 40000)
 
     
 # emp1 = Employee("Software Developer", "IT", 50000)
 # print(emp1.showDetails())
-eng1 = Engineer("Bruce", 25)
-print(eng1.showDetails())
+# eng1 = Engineer("Bruce", 25)
+# print(eng1.showDetails())
 
-
-
-
+# Question 
+class Orders:
+    def __init__(self, items, price):
+        self.items = items
+        self.price = price
+    def showDetails(self):
+        return f"Items: {self.items} \nPrice: {self.price}"
+    def __gt__(self, order2):
+        return self.price > order2.price
+            
+order1 = Orders("Pizza", 400)
+print(order1.showDetails())
+order2 = Orders("Burger", 300)
+print(order2.showDetails())
+print(order1 > order2)
