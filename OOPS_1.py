@@ -37,18 +37,44 @@
 # s1.FindAverage()
 # s1.hello()
         
-class car():
-    def __init__(self):
-        self.acc = False
-        self.brk = False
-        self.clutch = False
+# class car():
+#     def __init__(self):
+#         self.acc = False
+#         self.brk = False
+#         self.clutch = False
 
-    def start(self):
-        self.brk = True
-        self.clutch = True
-        self.acc = True
+#     def start(self):
+#         self.brk = True
+#         self.clutch = True
+#         self.acc = True
 
-        print("Car Started")
+#         print("Car Started")
 
-car1 = car()
-car1.start()
+# car1 = car()
+# car1.start()
+
+class acount():
+    def __init__(self,balance,accno):
+        self.balance = balance
+        self.accno = accno
+
+    # Debit
+    def debit(self, amount):
+        self.balance -= amount
+        print("Debited amount is", amount)
+        # print("Remaining balance is", self.balance)
+    # Credit
+    def credit(self, amount):
+        self.balance += amount
+        print("Credited amount is", amount)
+        # print("Remaining balance is", self.balance)
+    # Check Balance
+    def check_balance(self):
+        print("Your balance is", self.balance)
+
+acc1 = acount(1000, 123456)
+# print(acc1.balance)
+# print(acc1.accno)
+acc1.debit(500)
+acc1.credit(1000)
+acc1.check_balance()
