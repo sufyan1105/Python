@@ -10,20 +10,25 @@ Public Class:
     - It is accessible and documented for external use.
 """
 
-# class Car:
-#     @staticmethod
-#     def start():
-#         print("Car is starting")
+class Car:
+    def __init__(self, type):
+        self.type = type
+    
+    @staticmethod
+    def start():
+        print("Car is starting")
 
-#     @staticmethod
-#     def stop():
-#         print("Car is stopping")
+    @staticmethod
+    def stop():
+        print("Car is stopping")
 
-# class Toyota(Car):
-#     def __init__(self,brand):
-#         self.brand = brand
+class Toyota(Car):
+    def __init__(self,name,type):
+        self.name = name
+        super().__init__(type)
         
-# car1 = Toyota("Fortuner")
+car1 = Toyota("Fortuner","Petrol")
+print(car1.type)
 # car2 = Toyota("Innova")
 
 # print(car1.name)
@@ -39,16 +44,14 @@ Public Class:
 # car1 = Fortuner("Petrol")
 # car1.start()
         
-class A:
-    varA = "I am A"
-
-class B:
-    varB = "I am B"
-
-class C(A,B):
-    varC = "I am C"
-
-c1 = C()
-print(c1.varA)
-print(c1.varB)
-print(c1.varC)
+# Multiple Inheritance
+# class A:
+#     varA = "I am A"
+# class B:
+#     varB = "I am B"
+# class C(A,B):
+#     varC = "I am C"
+# c1 = C()
+# print(c1.varA)
+# print(c1.varB)
+# print(c1.varC)
