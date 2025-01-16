@@ -10,19 +10,18 @@ Public Class:
     - It is accessible and documented for external use.
 """
 
-class Car:
-   
-    @staticmethod
-    def start():
-        print("Car is starting")
+# class Car:
+#     @staticmethod
+#     def start():
+#         print("Car is starting")
 
-    @staticmethod
-    def stop():
-        print("Car is stopping")
+#     @staticmethod
+#     def stop():
+#         print("Car is stopping")
 
-class Toyota(Car):
-    def __init__(self,brand):
-        self.brand = brand
+# class Toyota(Car):
+#     def __init__(self,brand):
+#         self.brand = brand
         
 # car1 = Toyota("Fortuner")
 # car2 = Toyota("Innova")
@@ -33,10 +32,10 @@ class Toyota(Car):
 # print(car1.color)
 # print(car2.name)
 
-class Fortuner(Toyota):
-    def __init__(self, type):
-        self.type = type
+# class Fortuner(Toyota):
+#     def __init__(self, type):
+#         self.type = type
 
-car1 = Fortuner("Petrol")
-car1.start()
+# car1 = Fortuner("Petrol")
+# car1.start()
         
