@@ -58,17 +58,38 @@ Public Class:
 # print(c1.varC)
 
 # Class Method
-class Person:
-    name = "anonymous"
+# class Person:
+#     name = "anonymous"
 
-    # def change_name(self, name):
-    #     self.name = name
-    
-    @classmethod
-    def change_name(cls, name):
-        cls.name = name
+#     # def change_name(self, name):
+#     #     self.name = name
 
-p1 = Person()
-p1.change_name("Bruce")
-print(p1.name)
-print(Person.name)
+#     @classmethod
+#     def change_name(cls, name):
+#         cls.name = name
+
+# p1 = Person()
+# p1.change_name("Bruce")
+# print(p1.name)
+# print(Person.name)
+
+# Property Decorator
+class Student:
+    def __init__(self, phy, chem, maths):
+        self.phy = phy
+        self.chem = chem
+        self.maths = maths
+
+    @property
+    def claculate_percentage(self):
+        return str(round((self.phy + self.chem + self.maths) / 3,2)) + "%"
+
+stu1 = Student(80,90,95)
+print(stu1.claculate_percentage)
+        
+
+
+
+
+
+
