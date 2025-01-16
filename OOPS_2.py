@@ -11,7 +11,7 @@ Public Class:
 """
 
 class Car:
-    color = "Black"
+   
     @staticmethod
     def start():
         print("Car is starting")
@@ -21,14 +21,22 @@ class Car:
         print("Car is stopping")
 
 class Toyota(Car):
-    def __init__(self,name):
-        self.name = name
+    def __init__(self,brand):
+        self.brand = brand
         
-car1 = Toyota("Fortuner")
-car2 = Toyota("Innova")
+# car1 = Toyota("Fortuner")
+# car2 = Toyota("Innova")
 
-print(car1.name)
-print(car1.start())
-print(car1.stop())
-print(car1.color)
-print(car2.name)
+# print(car1.name)
+# print(car1.start())
+# print(car1.stop())
+# print(car1.color)
+# print(car2.name)
+
+class Fortuner(Toyota):
+    def __init__(self, type):
+        self.type = type
+
+car1 = Fortuner("Petrol")
+car1.start()
+        
