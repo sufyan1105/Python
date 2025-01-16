@@ -143,7 +143,7 @@ Public Class:
 # eng1 = Engineer("Bruce", 25)
 # print(eng1.showDetails())
 
-# Question 
+# Question define a class Orders with the following attributes: items, price and a method showDetails. Also, define a method __gt__ in the Orders class to compare the price of two orders.
 class Orders:
     def __init__(self, items, price):
         self.items = items
