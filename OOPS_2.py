@@ -106,21 +106,42 @@ Public Class:
 # num3 = num1 + num2
 # print(num3.display())
 
+# Question define a class Circle with the following methods: Area and Perimeter of the circle.
+# class Circle:
+#     def __init__(self,radius):
+#         self.radius = radius
+
+#     def area(self):
+#         return 3.14 * self.radius * self.radius
+    
+#     def perimeter(self):
+#         return 2 * 3.14 * self.radius
+    
+# c1 = Circle(4)
+# print("This is the radius of the circle:", c1.area())
+# print("This is the perimeter of the circle:", c1.perimeter())
+
 # Question 
-class Circle:
-    def __init__(self,radius):
-        self.radius = radius
-
-    def area(self):
-        return 3.14 * self.radius * self.radius
+class Employee:
+    def __init__(self, role , department, salary):
+        self.role = role
+        self.department = department
+        self.salary = salary
     
-    def perimeter(self):
-        return 2 * 3.14 * self.radius
+    def showDetails(self):
+        return f"Role: {self.role} \nDepartment: {self.department} \nSalary: {self.salary}"
     
-c1 = Circle(4)
-print("This is the radius of the circle:", c1.area())
-print("This is the perimeter of the circle:", c1.perimeter())
+class Engineer(Employee):
+    def __init__(self,name, age):
+        self.name = name
+        self.age = age
+        super().__init__("Engineer", "Data Analyst", 40000)
 
+    
+# emp1 = Employee("Software Developer", "IT", 50000)
+# print(emp1.showDetails())
+eng1 = Engineer("Bruce", 25)
+print(eng1.showDetails())
 
 
 
