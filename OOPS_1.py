@@ -22,6 +22,10 @@ class Student:
         self.name = name
         self.marks = marks
 
+    @staticmethod 
+    def hello():
+        print("Hello")
+
     def FindAverage(self):
         sum = 0
         for val in self.marks:
@@ -31,4 +35,5 @@ class Student:
 
 s1 = Student("Sufyan", [90,92,96])
 s1.FindAverage()
+s1.hello()
         
