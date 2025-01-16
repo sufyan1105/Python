@@ -74,22 +74,35 @@ Public Class:
 # print(Person.name)
 
 # Property Decorator
-class Student:
-    def __init__(self, phy, chem, maths):
-        self.phy = phy
-        self.chem = chem
-        self.maths = maths
-
-    @property
-    def claculate_percentage(self):
-        return str(round((self.phy + self.chem + self.maths) / 3,2)) + "%"
-
-stu1 = Student(80,90,95)
-print(stu1.claculate_percentage)
+# class Student:
+#     def __init__(self, phy, chem, maths):
+#         self.phy = phy
+#         self.chem = chem
+#         self.maths = maths
+#     @property
+#     def claculate_percentage(self):
+#         return str(round((self.phy + self.chem + self.maths) / 3,2)) + "%"
+# stu1 = Student(80,90,95)
+# print(stu1.claculate_percentage)
         
+# Polymorphism
+class Complex:
+    def __init__(self, real, imag):
+        self.real = real
+        self.imag = imag
+    
+    def display(self):
+        return f"{self.real}i + {self.imag}j"
 
+    def __add__(self, num2):
+        newreal = self.real + num2.real
+        newimag = self.imag + num2.imag
+        return Complex(newreal, newimag)
 
-
-
-
+num1 = Complex(2, 3)
+print(num1.display())
+num2 = Complex(5, 1)
+print(num2.display())
+num3 = num1 + num2
+print(num3.display())
 
