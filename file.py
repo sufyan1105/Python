@@ -22,9 +22,14 @@ import os
 # with open("practice.txt", "w") as f:
 #     f.write(newData)
 
+# with open("practice.txt", "r") as f:
+#     data = f.read()
+#     if "name" in data:
+#         print("Yes")
+#     else:
+#         print("No")
+
 with open("practice.txt", "r") as f:
     data = f.read()
-    if "name" in data:
-        print("Yes")
-    else:
-        print("No")
+
+
