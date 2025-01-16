@@ -17,23 +17,38 @@
 # print(c1.color)  # Output: Blue
 
 # Q1
-class Student:
-    def __init__(self, name , marks):
-        self.name = name
-        self.marks = marks
+# class Student:
+#     def __init__(self, name , marks):
+#         self.name = name
+#         self.marks = marks
 
-    @staticmethod 
-    def hello():
-        print("Hello")
+#     @staticmethod 
+#     def hello():
+#         print("Hello")
 
-    def FindAverage(self):
-        sum = 0
-        for val in self.marks:
-            sum += val
-        print("Hello", self.name,"your average marks are", round(sum/len(self.marks),2))
+#     def FindAverage(self):
+#         sum = 0
+#         for val in self.marks:
+#             sum += val
+#         print("Hello", self.name,"your average marks are", round(sum/len(self.marks),2))
         
 
-s1 = Student("Sufyan", [90,92,96])
-s1.FindAverage()
-s1.hello()
+# s1 = Student("Sufyan", [90,92,96])
+# s1.FindAverage()
+# s1.hello()
         
+class car():
+    def __init__(self):
+        self.acc = False
+        self.brk = False
+        self.clutch = False
+
+    def start(self):
+        self.brk = True
+        self.clutch = True
+        self.acc = True
+
+        print("Car Started")
+
+car1 = car()
+car1.start()
