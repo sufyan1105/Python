@@ -86,23 +86,42 @@ Public Class:
 # print(stu1.claculate_percentage)
         
 # Polymorphism
-class Complex:
-    def __init__(self, real, imag):
-        self.real = real
-        self.imag = imag
+# class Complex:
+#     def __init__(self, real, imag):
+#         self.real = real
+#         self.imag = imag
     
-    def display(self):
-        return f"{self.real}i + {self.imag}j"
+#     def display(self):
+#         return f"{self.real}i + {self.imag}j"
 
-    def __add__(self, num2):
-        newreal = self.real + num2.real
-        newimag = self.imag + num2.imag
-        return Complex(newreal, newimag)
+#     def __add__(self, num2):
+#         newreal = self.real + num2.real
+#         newimag = self.imag + num2.imag
+#         return Complex(newreal, newimag)
+# #  We can use all the operators in the same way as we used __add__ method eg: __sub__ , __mul__ , __div__ etc.
+# num1 = Complex(2, 3)
+# print(num1.display())
+# num2 = Complex(5, 1)
+# print(num2.display())
+# num3 = num1 + num2
+# print(num3.display())
 
-num1 = Complex(2, 3)
-print(num1.display())
-num2 = Complex(5, 1)
-print(num2.display())
-num3 = num1 + num2
-print(num3.display())
+# Question 
+class Circle:
+    def __init__(self,radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+    
+    def perimeter(self):
+        return 2 * 3.14 * self.radius
+    
+c1 = Circle(4)
+print("This is the radius of the circle:", c1.area())
+print("This is the perimeter of the circle:", c1.perimeter())
+
+
+
+
 
