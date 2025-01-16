@@ -53,11 +53,11 @@
 # car1 = car()
 # car1.start()
 
+# Practice question making a class of account with debit, credit and check balance methods
 class acount():
     def __init__(self,balance,accno):
         self.balance = balance
         self.accno = accno
-
     # Debit
     def debit(self, amount):
         self.balance -= amount
