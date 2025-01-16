@@ -39,3 +39,16 @@ Public Class:
 # car1 = Fortuner("Petrol")
 # car1.start()
         
+class A:
+    varA = "I am A"
+
+class B:
+    varB = "I am B"
+
+class C(A,B):
+    varC = "I am C"
+
+c1 = C()
+print(c1.varA)
+print(c1.varB)
+print(c1.varC)
