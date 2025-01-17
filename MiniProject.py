@@ -13,7 +13,7 @@ while guess != target:
 print("Congratulations! You guessed the number correctly!")
 print("The number was", target)
 print("Thanks for playing!")
-
+print("------Game Over------")
 
 
 
