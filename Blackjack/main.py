@@ -6,6 +6,16 @@ def deal_card():
     card = random.choice(cards)
     return card
 
+def calculated_cards(cards):
+    if sum(cards) == 21 and len(cards) == 2:
+        return 0
+    
+    if 11 in cards and sum(cards) > 21:
+        cards.remove(11)
+        cards.append(1)
+
+    return sum(cards)
+
 user_cards = []
 computer_cards = []
 
@@ -13,6 +23,5 @@ for _ in range(2):
     user_cards.append(deal_card())
     computer_cards.append(deal_card())
 
-def calculated_cards():
-    return sum(user_cards), sum(computer_cards)
+
 
