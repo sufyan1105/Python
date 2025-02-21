@@ -69,7 +69,7 @@ def play_game():
     print(compare(user_score, computer_score))
 
 while input("Do you want to play a game of BlackJack? Type 'y' or 'n': ") == "y" :
-    # print("\n" *  20)
+    # print("\n" *  20)  
     play_game()
 
 
