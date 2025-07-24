@@ -2,9 +2,13 @@
 # import turtle
 from turtle import Turtle, Screen
 
-Timmy = Turtle()
+timmy = Turtle()
 my_screen = Screen()
-Timmy.shape("turtle")
-Timmy.color("red")
+timmy.shape("turtle")
+timmy.color("red")
+timmy.forward(100)
 
 my_screen.exitonclick()
+
+
+
